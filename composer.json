@@ -1,0 +1,13 @@
+{
+    "name": "influx/php-project-lvl1",
+    "description": "my first project on Hexlet",
+    "authors": [
+        {
+            "name": "Nikita Krochak",
+            "email": "krochak_n@mail.ru"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "bin": [ "bin/brain-games" ]
+}
