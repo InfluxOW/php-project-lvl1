@@ -10,4 +10,12 @@
     ],
     "require": {
         "wp-cli/php-cli-tools": "*"
-    } }
+    },
+    "autoload": {
+        "files": [
+            "src/Cli.php"
+        ],
+        "psr-4": {
+            "Php\\Package\\": "src"
+        }
+} }
