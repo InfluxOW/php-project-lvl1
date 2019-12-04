@@ -11,6 +11,12 @@
     "require": {
         "wp-cli/php-cli-tools": "*"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "files": [
             "src/Cli.php"
