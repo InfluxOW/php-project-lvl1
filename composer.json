@@ -12,7 +12,7 @@
         "wp-cli/php-cli-tools": "*"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "3.*"
+        "squizlabs/php_codesniffer": "*"
     },
     "scripts": {
         "phpcs": "phpcs"
