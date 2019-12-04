@@ -1,5 +1,6 @@
 {
     "name": "influx/php-project-lvl1",
+    "bin": [ "bin/brain-games" ],
     "description": "my first project on Hexlet",
     "authors": [
         {
@@ -7,7 +8,6 @@
             "email": "krochak_n@mail.ru"
         }
     ],
-    "require": {},
-    "minimum-stability": "dev",
-    "bin": [ "bin/brain-games" ]
-}
+    "require": {
+        "wp-cli/php-cli-tools": "*"
+    } }
