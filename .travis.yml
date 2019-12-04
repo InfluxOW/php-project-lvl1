@@ -14,7 +14,6 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
   - composer require --dev "squizlabs/php_codesniffer=*"
-  - make test-coverage
 
 script: make lint
 
