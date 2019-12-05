@@ -8,6 +8,12 @@
             "email": "krochak_n@mail.ru"
         }
     ],
+    "keywords": [
+        "PHP",
+        "hexlet",
+        "study project"
+    ],
+    "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "*"
     },
@@ -19,9 +25,7 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
-        ],
-        "psr-4": {
-            "Php\\Package\\": "src"
-        }
+            "src/Cli.php",
+            "src/games/brain-even.php"
+        ]
 } }
