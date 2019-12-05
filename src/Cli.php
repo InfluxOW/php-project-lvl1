@@ -24,12 +24,12 @@ function game($mission, $getQuestionAndFindCorrectAnswer)
 
         if ($gameAnswer !== $correctAnswer) {
             line("'{$gameAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
-            line ("Let's try again, {$name}");
+            line("Let's try again, {$name}");
             return;
         }
         line("Correct!");
     }
-    line ("Congratulations, {$name}");
+    line("Congratulations, {$name}");
 }
 
 function run()
