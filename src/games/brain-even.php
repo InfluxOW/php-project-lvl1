@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\BrainEven;
+namespace BrainGames\Src\Games\BrainEven;
 
-use function BrainGames\Cli\game;
+use function BrainGames\Src\Cli\game;
 
 const EXERCISE_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 

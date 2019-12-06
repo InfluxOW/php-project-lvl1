@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Src\Cli;
 
 use function cli\line;
 use function cli\prompt;
@@ -14,11 +14,11 @@ function game($mission, $getQuestionAndCorrectAnswer)
     line($mission);
     PHP_EOL;
     $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    line("Hello, {$name}");
 
     for ($roundCounter = 1; $roundCounter <= ROUNDS_COUNT; $roundCounter++) {
         [$question, $correctAnswer] = $getQuestionAndCorrectAnswer();
-        line("Question:, %s!", $question);
+        line("Question: {$question}");
 
         $gameAnswer = prompt('Your answer');
 
@@ -29,5 +29,5 @@ function game($mission, $getQuestionAndCorrectAnswer)
         }
         line("Correct!");
     }
-    line("Congratulations, {$name}");
+    line("Congratulations, {$name}!");
 }

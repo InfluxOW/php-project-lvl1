@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\BrainCalc;
+namespace BrainGames\Src\Games\BrainCalc;
 
-use function BrainGames\Cli\game;
+use function BrainGames\Src\Cli\game;
 
 const EXERCISE_DESCRIPTION = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
