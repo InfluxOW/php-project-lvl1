@@ -22,10 +22,10 @@ function greatestCommonDivisor()
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
-function getGCD($a, $b) 
+function getGCD($a, $b)
 {
-    $large = $a > $b ? $a: $b;
-    $small = $a > $b ? $b: $a;
+    $large = $a > $b ? $a : $b;
+    $small = $a > $b ? $b : $a;
     $remainder = $large % $small;
     return 0 === $remainder ? $small : getGCD($small, $remainder);
 }
