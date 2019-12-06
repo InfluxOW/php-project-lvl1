@@ -4,7 +4,7 @@ namespace BrainGames\Games\BrainCalc;
 
 use function BrainGames\Cli\game;
 
-const EXERCISE_DESCRIPTION = 'What is the result of the expression?".';
+const EXERCISE_DESCRIPTION = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
 
 function calc()
