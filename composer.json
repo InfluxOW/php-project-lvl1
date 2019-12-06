@@ -1,6 +1,5 @@
 {
     "name": "influx/php-project-lvl1",
-    "bin": [ "bin/brain-games" ],
     "description": "my first project on Hexlet",
     "authors": [
         {
@@ -24,10 +23,17 @@
     "scripts": {
         "phpcs": "phpcs"
     },
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even",
+        "bin/brain-gcd",
+        "bin/brain-calc"
+    ],
     "autoload": {
         "files": [
             "src/Cli.php",
             "src/games/brain-even.php",
-            "src/games/brain-calc.php"
+            "src/games/brain-calc.php",
+            "src/games/brain-gcd.php"
         ]
 } }

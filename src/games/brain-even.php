@@ -9,8 +9,10 @@ const EXERCISE_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answ
 function evenNumbers()
 {
     $getQuestionAndCorrectAnswer = function () {
+
         $question = rand();
         $correctAnswer = isEven($question) ? "yes" : "no";
+        
         return [$question, $correctAnswer];
     };
 
