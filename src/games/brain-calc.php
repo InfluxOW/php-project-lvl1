@@ -18,15 +18,15 @@ function calc()
         $question = "{$firstNumber} {$operation} {$secondNumber}";
 
         switch ($operation) {
-            case '+':
-                $correctAnswer = $firstNumber + $secondNumber;
-                break;
-            case '-':
-                $correctAnswer = $firstNumber - $secondNumber;
-                break;
-            case '*':
-                $correctAnswer = $firstNumber * $secondNumber;
-                break;
+        case '+':
+            $correctAnswer = $firstNumber + $secondNumber;
+            break;
+        case '-':
+            $correctAnswer = $firstNumber - $secondNumber;
+            break;
+        case '*':
+            $correctAnswer = $firstNumber * $secondNumber;
+            break;
         }
 
         return [$question, $correctAnswer];
