@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb340976c49e29508a30812a15bd0831",
+    "content-hash": "32b5864ccf1d26f90ecae5c476c0ea29",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
-            "version": "v0.11.11",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/php-cli-tools.git",

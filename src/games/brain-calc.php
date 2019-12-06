@@ -9,7 +9,7 @@ const OPERATIONS = ['+', '-', '*'];
 
 function calc()
 {
-    $getQuestionAndFindCorrectAnswer = function () {
+    $getQuestionAndCorrectAnswer = function () {
         
         $firstNumber = rand(0, 50);
         $secondNumber = rand(0, 50);
@@ -29,8 +29,8 @@ function calc()
                 break;
         }
 
-        return [$question, (string) $correctAnswer];
+        return [$question, $correctAnswer];
     };
 
-    game(EXERCISE_DESCRIPTION, $getQuestionAndFindCorrectAnswer);
+    game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);
 }

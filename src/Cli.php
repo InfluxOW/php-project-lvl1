@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const ROUNDS_COUNT = 3;
 
-function game($mission, $getQuestionAndFindCorrectAnswer)
+function game($mission, $getQuestionAndCorrectAnswer)
 {
     line('Welcome to the Brain Game!');
     PHP_EOL;
@@ -17,14 +17,14 @@ function game($mission, $getQuestionAndFindCorrectAnswer)
     line("Hello, %s!", $name);
 
     for ($roundCounter = 1; $roundCounter <= ROUNDS_COUNT; $roundCounter++) {
-        [$question, $correctAnswer] = $getQuestionAndFindCorrectAnswer();
+        [$question, $correctAnswer] = $getQuestionAndCorrectAnswer();
         line("Question:, %s!", $question);
 
         $gameAnswer = prompt('Your answer');
 
-        if ($gameAnswer !== $correctAnswer) {
-            line("'{$gameAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
-            line("Let's try again, {$name}");
+        if ($gameAnswer !== (string) $correctAnswer) {
+            line("'{$gameAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+            line("Let's try again, {$name}!");
             return;
         }
         line("Correct!");

@@ -8,13 +8,13 @@ const EXERCISE_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answ
 
 function evenNumbers()
 {
-    $getQuestionAndFindCorrectAnswer = function () {
+    $getQuestionAndCorrectAnswer = function () {
         $question = rand();
         $correctAnswer = isEven($question) ? "yes" : "no";
         return [$question, $correctAnswer];
     };
 
-    game(EXERCISE_DESCRIPTION, $getQuestionAndFindCorrectAnswer);
+    game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
 function isEven($question)
