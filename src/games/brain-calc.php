@@ -7,7 +7,7 @@ use function BrainGames\Src\Cli\game;
 const EXERCISE_DESCRIPTION = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
 
-function calc()
+function calcGame()
 {
     $getQuestionAndCorrectAnswer = function () {
         

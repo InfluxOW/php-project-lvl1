@@ -14,6 +14,7 @@
     ],
     "license": "MIT",
     "minimum-stability": "dev",
+    "type": "project",
     "require": {
         "wp-cli/php-cli-tools": "*"
     },

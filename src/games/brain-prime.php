@@ -6,7 +6,7 @@ use function BrainGames\Src\Cli\game;
 
 const EXERCISE_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function prime()
+function primeGame()
 {
     $getQuestionAndCorrectAnswer = function () {
         

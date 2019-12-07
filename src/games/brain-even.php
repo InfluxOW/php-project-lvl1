@@ -6,7 +6,7 @@ use function BrainGames\Src\Cli\game;
 
 const EXERCISE_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function evenNumbers()
+function evenNumbersGame()
 {
     $getQuestionAndCorrectAnswer = function () {
 

@@ -7,7 +7,7 @@ use function BrainGames\Src\Cli\game;
 const EXERCISE_DESCRIPTION = 'What number is missing in the progression?';
 const PROGRESSION_LENGTH = 10;
 
-function progression()
+function progressionGame()
 {
     $getQuestionAndCorrectAnswer = function () {
         
