@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Src\Games\BrainRandom;
+namespace BrainGames\Src\BrainRandom;
 
 use function BrainGames\Src\Games\BrainCalc\calcGame;
 use function BrainGames\Src\Games\BrainEven\evenNumbersGame;
