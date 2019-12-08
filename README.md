@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/InfluxOW/php-project-lvl1.svg?branch=master)](https://travis-ci.org/InfluxOW/php-project-lvl1)
 
 $ installation process\
-[![asciicast](https://asciinema.org/a/k7FnSDs1bxW8gUM7LWzXfLbYp.svg)](https://asciinema.org/a/k7FnSDs1bxW8gUM7LWzXfLbYp)\
+[![asciicast](https://asciinema.org/a/bEDBI0nKMtTWcDIdx8XOtrbnD.svg)](https://asciinema.org/a/bEDBI0nKMtTWcDIdx8XOtrbnD)\
 $ brain-calc game\
 [![asciicast](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S.svg)](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S)
 $ brain-even game\
