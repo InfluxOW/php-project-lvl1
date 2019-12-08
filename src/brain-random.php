@@ -7,10 +7,11 @@ use function BrainGames\Src\Games\BrainEven\evenNumbersGame;
 use function BrainGames\Src\Games\BrainGCD\greatestCommonDivisorGame;
 use function BrainGames\Src\Games\BrainPrime\primeGame;
 use function BrainGames\Src\Games\BrainProgression\progressionGame;
+use function BrainGames\Src\Games\BrainRoot\rootGame;
 
 function chooseRandomGame()
 {
-    $randomNumber = rand(0, 4);
+    $randomNumber = rand(0, 5);
     switch ($randomNumber) {
         case '0':
             calcGame();
@@ -26,6 +27,9 @@ function chooseRandomGame()
             break;
         case '4':
             progressionGame();
+            break;
+        case '5':
+            rootGame();
             break;
     }
 }
