@@ -14,4 +14,8 @@ $ brain-gcd game\
 $ brain-prime game\
 [![asciicast](https://asciinema.org/a/wifd3FxFPOz6NMugTsmVrCpBo.svg)](https://asciinema.org/a/wifd3FxFPOz6NMugTsmVrCpBo)\
 $ brain-progression game\
-[![asciicast](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn.svg)](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn)
+[![asciicast](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn.svg)](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn)\
+$brain-root additional game\
+[![asciicast](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J.svg)](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J)\
+$ brain-random feature\
+[![asciicast](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1.svg)](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1)
