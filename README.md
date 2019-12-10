@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/InfluxOW/php-project-lvl1.svg?branch=master)](https://travis-ci.org/InfluxOW/php-project-lvl1)
 
 $ installation process\
-[![asciicast](https://asciinema.org/a/bEDBI0nKMtTWcDIdx8XOtrbnD.svg)](https://asciinema.org/a/bEDBI0nKMtTWcDIdx8XOtrbnD)\
+[![asciicast](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW.svg)](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW)\
 $ brain-calc game\
 [![asciicast](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S.svg)](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S)
 $ brain-even game\
@@ -19,3 +19,23 @@ $brain-root additional game\
 [![asciicast](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J.svg)](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J)\
 $ brain-random feature\
 [![asciicast](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1.svg)](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1)
+
+## How To Install
+`composer global require influx/php-project-lvl1`
+## How To Run A Game
+`brain-*game-name*`
+## Games List With Description
+1. *calc*\
+Find the result of the expression?
+2. *even*\
+Answer "yes" if the number is even, otherwise answer "no".
+3. *gcd*\
+Find the greatest common divisor of given numbers.
+4. *prime*\
+Answer "yes" if given number is prime. Otherwise answer "no".
+5. *progression*\
+Find number that missing in the progression?
+6. *root*\
+Find an integer whose square is closest to the specified.
+## Additional Features
+`brain-random` allows you to run random game
