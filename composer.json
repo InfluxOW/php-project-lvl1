@@ -13,7 +13,6 @@
         "study project"
     ],
     "license": "MIT",
-    "minimum-stability": "dev",
     "type": "project",
     "require": {
         "wp-cli/php-cli-tools": "*"
@@ -35,13 +34,13 @@
     ],
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/games/brain-even.php",
-            "src/games/brain-calc.php",
-            "src/games/brain-gcd.php",
-            "src/games/brain-progression.php",
-            "src/games/brain-prime.php",
-            "src/games/brain-root.php",
-            "src/brain-random.php"
+            "src/engine.php",
+            "src/games/even.php",
+            "src/games/calc.php",
+            "src/games/gcd.php",
+            "src/games/progression.php",
+            "src/games/prime.php",
+            "src/games/root.php",
+            "src/features/random.php"
         ]
 } }
