@@ -26,7 +26,7 @@ $ brain-random feature\
 `brain-*game-name*`
 ## Games List With Description
 1. *calc*\
-Find the result of the expression?
+Find the result of the expression.
 2. *even*\
 Answer "yes" if the number is even, otherwise answer "no".
 3. *gcd*\
@@ -34,8 +34,8 @@ Find the greatest common divisor of given numbers.
 4. *prime*\
 Answer "yes" if given number is prime. Otherwise answer "no".
 5. *progression*\
-Find number that missing in the progression?
+Find number that missing in the progression.
 6. *root*\
 Find an integer whose square is closest to the specified.
 ## Additional Features
-`brain-random` allows you to run random game
+`brain-random` allows you to run a random game
