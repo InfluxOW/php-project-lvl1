@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\GCD;
+namespace BrainGames\games\gcd;
 
-use function BrainGames\Engine\game;
+use function BrainGames\engine\game;
 
 const EXERCISE_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
@@ -13,10 +13,10 @@ function GCDGame()
         $first = rand(0, 100);
         $second = rand(0, 100);
 
-        $question = "{$first}, {$second}";
+        $question = "$first, $second";
         $correctAnswer = getGCD($first, $second);
         
-        return [$question, $correctAnswer];
+        return [$question, (string) $correctAnswer];
     };
 
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);

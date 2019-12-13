@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\Calc;
+namespace BrainGames\games\calc;
 
-use function BrainGames\Engine\game;
+use function BrainGames\engine\game;
 
 const EXERCISE_DESCRIPTION = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
@@ -15,7 +15,7 @@ function calcGame()
         $second = rand(0, 50);
         $operation = OPERATIONS[array_rand(OPERATIONS)];
         
-        $question = "{$first} {$operation} {$second}";
+        $question = "$first $operation $second";
 
         switch ($operation) {
             case '+':
@@ -29,7 +29,7 @@ function calcGame()
                 break;
         }
 
-        return [$question, $correctAnswer];
+        return [$question, (string) $correctAnswer];
     };
 
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);

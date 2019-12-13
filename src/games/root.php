@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\Root;
+namespace BrainGames\games\root;
 
-use function BrainGames\Engine\game;
+use function BrainGames\engine\game;
 
 const EXERCISE_DESCRIPTION = 'Find an integer whose square is closest to the specified.';
 
@@ -13,7 +13,7 @@ function rootGame()
         $question = rand(1, 1000);
         $correctAnswer = getRoundedRoot($question);
         
-        return [$question, $correctAnswer];
+        return [$question, (string) $correctAnswer];
     };
 
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);

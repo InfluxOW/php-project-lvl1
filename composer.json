@@ -41,6 +41,6 @@
             "src/games/progression.php",
             "src/games/prime.php",
             "src/games/root.php",
-            "src/features/random.php"
+            "src/additional-features/chose-random-game.php"
         ]
 } }
