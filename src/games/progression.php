@@ -10,14 +10,16 @@ const PROGRESSION_LENGTH = 10;
 function progressionGame()
 {
     $getQuestionAndCorrectAnswer = function () {
-        
-        $originalProgression = generateProgression(PROGRESSION_LENGTH);
-        $hiddenProgression = $originalProgression;
-        $indexToHide = array_rand($hiddenProgression);
-        $hiddenProgression[$indexToHide] = "..";
 
-        $question = implode(' ', $hiddenProgression);
-        $correctAnswer = $originalProgression[$indexToHide];
+        $step = rand(1, 10);
+        $progressionStart = rand(0, 100);
+        $originalProgression = generateProgression($step, $progressionStart);
+        $progression = $originalProgression;
+        $hiddenElementIndex = array_rand($progression);
+        $progression[$hiddenElementIndex] = "..";
+
+        $question = implode(' ', $progression);
+        $correctAnswer = $originalProgression[$hiddenElementIndex];
 
         return [$question, (string) $correctAnswer];
     };
@@ -25,14 +27,11 @@ function progressionGame()
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
-function generateProgression($progressionLength)
+function generateProgression($step, $progressionStart)
 {
-    $step = rand(1, 10);
-    $result = [];
-    $progressionStart = rand(0, 100);
-
-    for ($i = 0; $i <= $progressionLength; $i++) {
+    for ($i = 0; $i <= PROGRESSION_LENGTH; $i++) {
         $result[] = $progressionStart + $i * $step;
     }
+
     return $result;
 }
