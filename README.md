@@ -18,7 +18,7 @@ $ brain-progression game\
 $brain-root additional game\
 [![asciicast](https://asciinema.org/a/w1b7sHoTxtvs8Q8koHyTfQzyd.svg)](https://asciinema.org/a/w1b7sHoTxtvs8Q8koHyTfQzyd)\
 $ brain-random feature\
-[![asciicast](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx.svg)](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx)\
+[![asciicast](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx.svg)](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx)
 
 ## How To Install
 `composer global require influx/php-project-lvl1`
