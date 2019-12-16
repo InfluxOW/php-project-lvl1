@@ -6,19 +6,19 @@
 $ installation process\
 [![asciicast](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW.svg)](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW)\
 $ brain-calc game\
-[![asciicast](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S.svg)](https://asciinema.org/a/EVvj67EEnWAGQByQAkyX5Kg1S)
+[![asciicast](https://asciinema.org/a/v6UjP6yW1y1yFOUfNn1wF74Xw.svg)](https://asciinema.org/a/v6UjP6yW1y1yFOUfNn1wF74Xw)\
 $ brain-even game\
-[![asciicast](https://asciinema.org/a/QUcuPVZtipA5kEyEEHGrtRIjD.svg)](https://asciinema.org/a/QUcuPVZtipA5kEyEEHGrtRIjD)\
+[![asciicast](https://asciinema.org/a/Rv3YccaXH9oUtOuuqS9F14AZu.svg)](https://asciinema.org/a/Rv3YccaXH9oUtOuuqS9F14AZu)\
 $ brain-gcd game\
-[![asciicast](https://asciinema.org/a/OF3WVOPZboaiz9Qz6WY98N6QT.svg)](https://asciinema.org/a/OF3WVOPZboaiz9Qz6WY98N6QT)\
+[![asciicast](https://asciinema.org/a/dZ7gggCImuOirHqSOQiirh2nz.svg)](https://asciinema.org/a/dZ7gggCImuOirHqSOQiirh2nz)\
 $ brain-prime game\
-[![asciicast](https://asciinema.org/a/wifd3FxFPOz6NMugTsmVrCpBo.svg)](https://asciinema.org/a/wifd3FxFPOz6NMugTsmVrCpBo)\
+[![asciicast](https://asciinema.org/a/Ek6msGuEHwKIaOskZqn93HjuC.svg)](https://asciinema.org/a/Ek6msGuEHwKIaOskZqn93HjuC)\
 $ brain-progression game\
-[![asciicast](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn.svg)](https://asciinema.org/a/fJZ6nFnlc3CEaNIrkX6vI11Tn)\
+[![asciicast](https://asciinema.org/a/sa6lEOsh1kCkdKEKUULFxbeTo.svg)](https://asciinema.org/a/sa6lEOsh1kCkdKEKUULFxbeTo)\
 $brain-root additional game\
-[![asciicast](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J.svg)](https://asciinema.org/a/qJLU6U43SPwp6pMyrlAgh7x3J)\
+[![asciicast](https://asciinema.org/a/w1b7sHoTxtvs8Q8koHyTfQzyd.svg)](https://asciinema.org/a/w1b7sHoTxtvs8Q8koHyTfQzyd)\
 $ brain-random feature\
-[![asciicast](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1.svg)](https://asciinema.org/a/TstulkdGY3I1ncu4l4oO1FXW1)
+[![asciicast](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx.svg)](https://asciinema.org/a/32Bf5qrGvvmR4PvIOtfRKkFBx)\
 
 ## How To Install
 `composer global require influx/php-project-lvl1`
