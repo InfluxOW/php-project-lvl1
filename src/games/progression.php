@@ -8,12 +8,13 @@ const EXERCISE_DESCRIPTION = 'What number is missing in the progression?';
 
 function progressionGame()
 {
+    define('PROGRESSION_LENGTH', 10);
+
     $getQuestionAndCorrectAnswer = function () {
 
         $step = rand(1, 10);
         $progressionStart = rand(0, 100);
-        $progressionLength = 10;
-        $originalProgression = generateProgression($step, $progressionStart, $progressionLength);
+        $originalProgression = generateProgression($step, $progressionStart);
         $progression = $originalProgression;
         $hiddenElementIndex = array_rand($progression);
         $progression[$hiddenElementIndex] = "..";
@@ -27,9 +28,9 @@ function progressionGame()
     game(EXERCISE_DESCRIPTION, $getQuestionAndCorrectAnswer);
 }
 
-function generateProgression($step, $progressionStart, $progressionLength)
+function generateProgression($step, $progressionStart)
 {
-    for ($i = 0; $i <= $progressionLength; $i++) {
+    for ($i = 0; $i <= PROGRESSION_LENGTH; $i++) {
         $result[] = $progressionStart + $i * $step;
     }
 
