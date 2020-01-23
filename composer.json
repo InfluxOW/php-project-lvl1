@@ -1,6 +1,6 @@
 {
     "name": "influx/php-project-lvl1",
-    "description": "my first project on Hexlet",
+    "description": "math",
     "authors": [
         {
             "name": "Nikita Krochak",
@@ -43,4 +43,4 @@
             "src/games/root.php",
             "src/additional-features/chose-random-game.php"
         ]
-} }
+}}
