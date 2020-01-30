@@ -1,6 +1,6 @@
 {
     "name": "influx/php-project-lvl1",
-    "description": "math",
+    "description": "math games",
     "authors": [
         {
             "name": "Nikita Krochak",
@@ -15,7 +15,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "wp-cli/php-cli-tools": "*"
+        "wp-cli/php-cli-tools": "*",
+        "docopt/docopt": "^1.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
@@ -24,17 +25,12 @@
         "phpcs": "phpcs"
     },
     "bin": [
-        "bin/brain-even",
-        "bin/brain-gcd",
-        "bin/brain-calc",
-        "bin/brain-progression",
-        "bin/brain-prime",
-        "bin/brain-random",
-        "bin/brain-root"
+        "bin/brain-games"
     ],
     "autoload": {
         "files": [
             "src/engine.php",
+            "src/Cli.php",
             "src/games/even.php",
             "src/games/calc.php",
             "src/games/gcd.php",

@@ -9,10 +9,8 @@ const ROUNDS_COUNT = 3;
 
 function game($mission, $getQuestionAndCorrectAnswer)
 {
-    line('Welcome to the Brain Game!');
-    PHP_EOL;
-    line($mission);
-    PHP_EOL;
+    line(PHP_EOL . 'Welcome to the Brain Game!' . PHP_EOL);
+    line("(!!!) Game mission: " . $mission);
     $name = prompt('May I have your name?');
     line("Hello, $name!");
 

@@ -23,7 +23,7 @@ $ brain-random feature\
 ## How To Install
 `composer global require influx/php-project-lvl1`
 ## How To Run A Game
-`brain-*game-name*`
+run `brain-games` and then type game name
 ## Games List With Description
 1. *calc*\
 Find the result of the expression.
@@ -38,4 +38,6 @@ Find number that missing in the progression.
 6. *root*\
 Find an integer whose square is closest to the specified.
 ## Additional Features
-`brain-random` allows you to run a random game
+    brain-games --random          run random game
+    brain-games --list            show list of games with their missions
+    brain-games --help            show help
