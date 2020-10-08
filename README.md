@@ -3,7 +3,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/970cce56722e33c9bf71/maintainability)](https://codeclimate.com/github/InfluxOW/php-project-lvl1/maintainability)
 [![Build Status](https://travis-ci.org/InfluxOW/php-project-lvl1.svg?branch=master)](https://travis-ci.org/InfluxOW/php-project-lvl1)
 
-$ installation process\
+**Hexlet.io first PHP project** \
+Description: https://ru.hexlet.io/professions/php/projects/45
+
+$ installation process
 [![asciicast](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW.svg)](https://asciinema.org/a/Mqf9aZRDHcabJA3dGhDrdYmUW)\
 $ brain-calc game\
 [![asciicast](https://asciinema.org/a/v6UjP6yW1y1yFOUfNn1wF74Xw.svg)](https://asciinema.org/a/v6UjP6yW1y1yFOUfNn1wF74Xw)\
