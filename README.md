@@ -1,9 +1,8 @@
-# php-project-lvl1
+# Simple Math Games on PHP
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/970cce56722e33c9bf71/maintainability)](https://codeclimate.com/github/InfluxOW/php-project-lvl1/maintainability)
 [![Build Status](https://travis-ci.org/InfluxOW/php-project-lvl1.svg?branch=master)](https://travis-ci.org/InfluxOW/php-project-lvl1)
 
-**Hexlet.io first PHP project** \
 Description: https://ru.hexlet.io/professions/php/projects/45
 
 $ installation process
