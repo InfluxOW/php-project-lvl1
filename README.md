@@ -31,16 +31,16 @@ run `brain-games` and then type game name
 1. *calc*\
 Find the result of the expression.
 2. *even*\
-Answer "yes" if the number is even, otherwise answer "no".
+Answer "yes" if given number is even, otherwise answer "no".
 3. *gcd*\
 Find the greatest common divisor of given numbers.
 4. *prime*\
-Answer "yes" if given number is prime. Otherwise answer "no".
+Answer "yes" if given number is prime, otherwise answer "no".
 5. *progression*\
-Find number that missing in the progression.
+Find number that is missing in the progression.
 6. *root*\
-Find an integer whose square is closest to the specified.
-## Additional Features
+Find an integer whose square is closest to the given number.
+## Options
     brain-games --random          run random game
     brain-games --list            show list of games with their missions
     brain-games --help            show help
