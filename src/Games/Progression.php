@@ -22,6 +22,9 @@ class Progression extends AbstractGame
         $this->question = implode(' ', $progression);
     }
 
+    /**
+     * @return int[]
+     */
     private function generateProgression(int $step, int $progressionStart, int $progressionLength): array
     {
         $progression = [];

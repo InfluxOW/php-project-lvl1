@@ -21,7 +21,10 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^0.12.98",
+        "phpstan/phpstan-phpunit": "^0.12.22"
     },
     "bin": [
         "bin/brain-games"

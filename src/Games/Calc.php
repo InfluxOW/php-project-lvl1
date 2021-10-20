@@ -2,6 +2,8 @@
 
 namespace BrainGames\Games;
 
+use Exception;
+
 class Calc extends AbstractGame
 {
     public const GAME_NAME = 'calc';
@@ -24,6 +26,7 @@ class Calc extends AbstractGame
             self::ADDITION => $first + $second,
             self::SUBTRACTION => $first - $second,
             self::MULTIPLICATION => $first * $second,
+            default => throw new Exception(),
         };
     }
 }

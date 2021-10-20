@@ -10,7 +10,7 @@ abstract class AbstractGame
 
     protected static string $mission;
 
-    protected string $question;
+    protected string|int $question;
     protected string|float|int $correctAnswer;
 
     public function getMission(): string
@@ -18,7 +18,7 @@ abstract class AbstractGame
         return static::$mission;
     }
 
-    public function getQuestion(): string
+    public function getQuestion(): string|int
     {
         return $this->question;
     }

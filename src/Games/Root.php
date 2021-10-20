@@ -16,6 +16,6 @@ class Root extends AbstractGame
 
     private function getRoundedRoot(int $number): int
     {
-        return round($number ** 0.5);
+        return (int) round($number ** 0.5);
     }
 }
