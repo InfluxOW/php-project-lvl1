@@ -16,7 +16,7 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "wp-cli/php-cli-tools": "*",
+        "wp-cli/php-cli-tools": "^0.11.14",
         "docopt/docopt": "^1.0"
     },
     "require-dev": {
@@ -32,6 +32,11 @@
     "autoload": {
         "psr-4": {
             "BrainGames\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
         }
     }
 }

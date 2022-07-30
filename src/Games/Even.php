@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-class Even extends AbstractGame
+final class Even extends Game
 {
     public const GAME_NAME = 'even';
 
@@ -10,8 +10,10 @@ class Even extends AbstractGame
 
     public function prepareQuestionAndCorrectAnswer(): void
     {
-        $this->question = mt_rand();
-        $this->correctAnswer = $this->isEven($this->question) ? 'yes' : 'no';
+        $number = mt_rand();
+
+        $this->question = $number;
+        $this->correctAnswer = $this->isEven($number) ? 'yes' : 'no';
     }
 
     private function isEven(int $number): bool

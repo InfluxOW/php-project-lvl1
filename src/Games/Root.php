@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-class Root extends AbstractGame
+final class Root extends Game
 {
     public const GAME_NAME = 'root';
 
@@ -10,8 +10,10 @@ class Root extends AbstractGame
 
     public function prepareQuestionAndCorrectAnswer(): void
     {
-        $this->question = random_int(1, 1000);
-        $this->correctAnswer = $this->getRoundedRoot($this->question);
+        $number = random_int(1, 1000);
+
+        $this->question = $number;
+        $this->correctAnswer = $this->getRoundedRoot($number);
     }
 
     private function getRoundedRoot(int $number): int

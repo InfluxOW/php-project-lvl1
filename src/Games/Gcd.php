@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-class Gcd extends AbstractGame
+final class Gcd extends Game
 {
     public const GAME_NAME = 'gcd';
 
@@ -10,19 +10,19 @@ class Gcd extends AbstractGame
 
     public function prepareQuestionAndCorrectAnswer(): void
     {
-        $first = random_int(0, 100);
-        $second = random_int(0, 100);
+        $a = random_int(0, 100);
+        $b = random_int(0, 100);
 
-        $this->question = "{$first}, {$second}";
-        $this->correctAnswer = $this->getGcd($first, $second);
+        $this->question = "{$a}, {$b}";
+        $this->correctAnswer = $this->getGcd($a, $b);
     }
 
     private function getGcd(int $a, int $b): int
     {
-        $large = $a > $b ? $a : $b;
-        $small = $a > $b ? $b : $a;
-        $remainder = $large % $small;
+        $max = max($a, $b);
+        $min = min($a, $b);
+        $remainder = $max % $min;
 
-        return ($remainder === 0) ? $small : $this->getGcd($small, $remainder);
+        return ($remainder === 0) ? $min : $this->getGcd($min, $remainder);
     }
 }

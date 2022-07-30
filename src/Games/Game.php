@@ -4,16 +4,14 @@ namespace BrainGames\Games;
 
 use Exception;
 
-abstract class AbstractGame
+abstract class Game
 {
-    public const GAME_NAME = null;
-
     protected static string $mission;
 
     protected string|int $question;
     protected string|float|int $correctAnswer;
 
-    public function getMission(): string
+    public static function getMission(): string
     {
         return static::$mission;
     }

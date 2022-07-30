@@ -2,10 +2,10 @@
 
 namespace BrainGames;
 
-use BrainGames\Game as CoreGame;
-use BrainGames\Games\AbstractGame;
+use BrainGames\Engines\BrainGamesEngine;
 use BrainGames\Games\Calc;
 use BrainGames\Games\Even;
+use BrainGames\Games\Game;
 use BrainGames\Games\Gcd;
 use BrainGames\Games\Prime;
 use BrainGames\Games\Progression;
@@ -15,7 +15,7 @@ use Exception;
 
 use function cli\prompt;
 
-class Cli
+final class Cli
 {
     private const HELP = <<<'DOC'
 
@@ -28,22 +28,13 @@ class Cli
         brain-games (--random)
     
     Options:
-        -h --help                     Show this screen
-        --list                        Show list of games with their missions
-        --random                      Run random game
+        -h --help                       Show this screen
+        --list                          Show list of games with their missions
+        --random                        Run random game
 
     DOC;
 
-    private const GAMES_LIST = <<<'DOC'
-        calc                            What is the result of the expression?
-        even                            Answer "yes" if given number is even, otherwise answer "no".
-        gcd                             Find the greatest common divisor of given numbers.
-        prime                           Answer "yes" if given number is prime. Otherwise answer "no".
-        progression                     What number is missing in the progression?
-        root                            Find an integer whose square is closest to the specified one.
-    DOC;
-
-    public const AVAILABLE_GAMES_TO_ITS_CLASSNAMES = [
+    public const AVAILABLE_GAMES = [
         Calc::GAME_NAME => Calc::class,
         Even::GAME_NAME => Even::class,
         Gcd::GAME_NAME => Gcd::class,
@@ -56,31 +47,62 @@ class Cli
     private const EXIT_CODE_GENERIC_ERROR = 1;
 
     /**
+     * @param class-string<Game>|null $gameClassName
+     *
      * @noinspection ForgottenDebugOutputInspection
      */
-    public static function run(): void
+    public static function run(?string $gameClassName = null): void
     {
         $args = Docopt::handle(self::HELP);
 
         if ($args['--list']) {
-            print_r(self::GAMES_LIST . PHP_EOL);
+            self::displayGamesList();
             exit(self::EXIT_CODE_SUCCESS);
         }
 
-        $userName = CoreGame::welcome();
-        $gameName = $args['--random'] ? array_rand(array_flip(array_keys(self::AVAILABLE_GAMES_TO_ITS_CLASSNAMES))) : prompt('What game do you want to play?');
+        $engine = new BrainGamesEngine();
+        $engine->welcome();
 
-        if (array_key_exists($gameName, self::AVAILABLE_GAMES_TO_ITS_CLASSNAMES)) {
-            /** @var AbstractGame $gameClassName */
-            $gameClassName = self::AVAILABLE_GAMES_TO_ITS_CLASSNAMES[$gameName];
+        $gameClassName = $gameClassName ?? self::chooseGame($args);
 
-            try {
-                CoreGame::play(new $gameClassName(), $userName);
-                exit(self::EXIT_CODE_SUCCESS);
-            } catch (Exception $e) {
-                print_r($e->getMessage());
-                exit(self::EXIT_CODE_GENERIC_ERROR);
-            }
+        try {
+            $engine->start(new $gameClassName());
+        } catch (Exception $e) {
+            print_r($e->getMessage());
+            exit(self::EXIT_CODE_GENERIC_ERROR);
+        }
+
+        exit(self::EXIT_CODE_SUCCESS);
+    }
+
+    /**
+     * @noinspection ForgottenDebugOutputInspection
+     */
+    private static function displayGamesList(): void
+    {
+        $indentBeforeGameMission = 32;
+
+        $games = null;
+        /** @var Game $gameClass */
+        foreach (self::AVAILABLE_GAMES as $gameName => $gameClass) {
+            $indent = str_repeat(' ', $indentBeforeGameMission - strlen($gameName));
+            $games = "{$games}{$gameName}{$indent}{$gameClass::getMission()}" . PHP_EOL;
+        }
+
+        print_r($games);
+    }
+
+    /**
+     * @param Docopt\Response<string, string> $args
+     *
+     * @noinspection ForgottenDebugOutputInspection
+     */
+    private static function chooseGame(Docopt\Response $args): string
+    {
+        $gameName = $args['--random'] ? array_rand(self::AVAILABLE_GAMES) : prompt('What game do you want to play?');
+
+        if (array_key_exists($gameName, self::AVAILABLE_GAMES)) {
+            return self::AVAILABLE_GAMES[$gameName];
         }
 
         print_r('The game you\'ve chosen does not exist.' . PHP_EOL);

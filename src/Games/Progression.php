@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-class Progression extends AbstractGame
+final class Progression extends Game
 {
     public const GAME_NAME = 'progression';
     private const PROGRESSION_LENGTH = 10;

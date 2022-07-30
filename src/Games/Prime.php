@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-class Prime extends AbstractGame
+final class Prime extends Game
 {
     public const GAME_NAME = 'prime';
 
@@ -10,8 +10,10 @@ class Prime extends AbstractGame
 
     public function prepareQuestionAndCorrectAnswer(): void
     {
-        $this->question = random_int(0, 100);
-        $this->correctAnswer = $this->isPrime($this->question) ? 'yes' : 'no';
+        $number = random_int(0, 100);
+
+        $this->question = $number;
+        $this->correctAnswer = $this->isPrime($number) ? 'yes' : 'no';
     }
 
     private function isPrime(int $number): bool
